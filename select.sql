@@ -41,3 +41,16 @@ SELECT * FROM students
 
 SELECT * from students
    WHERE age > 20 AND course = 'Mathematics';
+
+SELECT upper(first_name) as first_name_in_upper_case, * from students;
+
+SELECT concat(first_name,'',last_name) from  students;
+
+SELECT min(age) from students;
+SELECT avg(age) from students;
+SELECT count(*) from students;
+
+SELECT max(length(first_name)) from students;
+
+
+

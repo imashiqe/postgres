@@ -54,3 +54,20 @@ SELECT concat  (first_name, ' ', last_name) as full_name from students;
 SELECT avg(age)  from students;
 
 SELECT count(*) from students;
+
+SELECT max(length(first_name)) from students;\
+
+SELECT  * from  students
+  WHERE email IS NOT NULL;
+
+
+SELECT * from students ;
+
+SELECT COALESCE(NULL, 5);
+
+SELECT COALESCE(email, 'Email Not Provided') as email, blood_group from students;
+
+SELECT * FROM students WHERE country  IN ('USA' ,'Canada' , 'UK') ; 
+SELECT * FROM students WHERE country NOT IN ('USA' ,'Canada' , 'UK') ; 
+
+SELECT * FROM students WHERE dob BETWEEN  '2002-01-01' AND '2004-01-01' ;

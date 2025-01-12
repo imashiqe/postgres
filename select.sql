@@ -32,6 +32,7 @@ SELECT *  FROM students ORDER BY dob DESC;
 
 SELECT DISTINCT blood_group from students   ;
 
+
 SELECT * FROM students WHERE country = 'USA';
 
 SELECT * FROM students WHERE grade = 'A' AND course = 'Physics';
@@ -42,15 +43,14 @@ SELECT * FROM students
 SELECT * from students
    WHERE age > 20 AND course = 'Mathematics';
 
-SELECT upper(first_name) as first_name_in_upper_case, * from students;
+SELECT * from students
+   WHERE age <> 20
 
-SELECT concat(first_name,'',last_name) from  students;
+SELECT upper(first_name), * from  students;
 
-SELECT min(age) from students;
-SELECT avg(age) from students;
+
+SELECT concat  (first_name, ' ', last_name) as full_name from students;
+
+SELECT avg(age)  from students;
+
 SELECT count(*) from students;
-
-SELECT max(length(first_name)) from students;
-
-
-

@@ -70,4 +70,11 @@ SELECT COALESCE(email, 'Email Not Provided') as email, blood_group from students
 SELECT * FROM students WHERE country  IN ('USA' ,'Canada' , 'UK') ; 
 SELECT * FROM students WHERE country NOT IN ('USA' ,'Canada' , 'UK') ; 
 
-SELECT * FROM students WHERE dob BETWEEN  '2002-01-01' AND '2004-01-01' ;
+SELECT * FROM students WHERE dob BETWEEN  '2002-01-01' AND '2004-01-01' ORDER BY dob ;
+
+SELECT * FROM students
+ WHERE first_name LIKE '%nc';
+
+
+ SELECT * FROM students
+LIMIT 5;

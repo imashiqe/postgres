@@ -78,3 +78,19 @@ SELECT * FROM students
 
  SELECT * FROM students
 LIMIT 5;
+
+SELECT * FROM students WHERE country  IN ('USA' ,'Canada' , 'UK') LIMIT 5; 
+
+SELECT * FROM students LIMIT 5 OFFSET 5 * 0;
+SELECT * FROM students LIMIT 5 OFFSET 5 * 1;
+SELECT * FROM students LIMIT 5 OFFSET 5 * 2;
+SELECT * FROM students LIMIT 5 OFFSET 5 * 3;
+
+DELETE FROM students;
+
+DELETE FROM students;
+
+SELECT * FROM students;
+
+UPDATE students SET email = 'default@email.com', age = 30 , course = 'sfdf'
+ WHERE student_id = 24;

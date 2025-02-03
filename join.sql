@@ -53,3 +53,9 @@ LEFT outer join "user" as u on p.user_id = u.id;
 
 SELECT * FROM post as p 
 RIGHT outer join "user" as u on p.user_id = u.id;
+
+
+SELECT * FROM post as p 
+FULL outer join "user" as u on p.user_id = u.id;
+
+

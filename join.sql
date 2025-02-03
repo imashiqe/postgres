@@ -41,3 +41,15 @@ CREATE TABLE post (
 
 
 SELECT title, username FROM  post JOIN "user" on  post.user_id = "user".id;
+
+SELECT "user".id FROM post
+JOIN "user" ON post.user_id = "user".id
+WHERE post.title = 'Enjoying a sunny day2';
+
+INSERT INTO post(title, user_id) VALUES('Enjoying a sunny day', 4);
+
+SELECT * FROM post as p 
+LEFT outer join "user" as u on p.user_id = u.id;
+
+SELECT * FROM post as p 
+RIGHT outer join "user" as u on p.user_id = u.id;

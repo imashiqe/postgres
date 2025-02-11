@@ -26,3 +26,9 @@ SELECT * , (SELECT sum(salary) from  employees ) from employees;
 SELECT department_name, sum (salary) from employees group by department_name;
 
 
+SELECT emp_name, salary, department_name
+    FROM employees
+    WHERE department_name in 
+    (SELECT department_name FROM employees WHERE department_name LIKE '%R%');
+
+     
